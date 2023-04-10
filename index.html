@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey form</title>
+</head>
+<body>
+  <div class="content-box">
+    <header class="header">
+      <h1 id="title" class="center-title">Let us know what you think</h1>
+      <p id="description" class="sub-center">Survey to improve our platform</p>
+    </header>
+    <form id="forms">
+      <div class="form-g">
+        <label id="form-name" for="name">Name</label><br>
+        <input type="text" name="name" id="name" class="form-c" placeholder="Enter your name" required>
+      </div>            
+      <div class="form-g">
+        <label id="form-email" for="email">Email</label><br>
+        <input type="text" name="email" id="email" class="form-c" placeholder="Enter your Email" required >
+      </div>
+      <div class="form-g">
+        <label id="form-age" for="age">
+            Age
+        <span class="optional">(optional)</span>
+        </label><br>
+        <input type="number" name="age" id="age" min="10" max="99" class="form-c" placeholder="Age">
+      </div>
+      <div class="form-g">
+        <p>Which of the following best describes your current employment status?</p>
+        <select id="dropdown" name="role" class="form-c" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="discret">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-g">
+        <p>Which development feature do you find the most useful?</p>
+          <label>
+            <input class="input-radio" name="user-recommend" value="definitely" type="radio">
+            Debugging tools
+          </label><br>
+          <label>
+            <input class="input-radio" name="user-recommend" value="maybe" type="radio">
+            Version control
+          </label><br>
+          <label>
+            <input class="input-radio" name="user-recommend" value="not-sure" type="radio">
+            Automated testing
+          </label>
+      </div>
+      <div class="form-g">
+        <p>Which development tool or technology do you appreciate the most?</p>
+        <select name="mostlike" id="most-like" class="form-c" required>
+          <option disabled selected value>Select an option</option>
+          <option value="challenges">Framework/library</option>
+          <option value="projects">Integrated development environment (IDE)</option>
+          <option value="community">Database management system</option>
+          <option value="openSource">Application programming interface (API)</option>
+        </select>
+      </div>
+      <div class="form-g">
+        <p>Which development feature do you think is the most innovative? 
+          <span class="clue">(Select all that apply)</span> 
+        </p>
+          <label for="">
+            <input  class="input-checkbox" name="preferences" value="front-end-projects" type="checkbox">
+            Artificial intelligence/machine learning
+          </label><br>
+          <label for="">
+            <input  class="input-checkbox" name="preferences" value="back-end-projects" type="checkbox">
+            Blockchain technology
+          </label><br>
+          <label for="">
+            <input  class="input-checkbox" name="preferences" value="data-visualization" type="checkbox">
+            Cloud computing
+          </label><br>
+          <label for="">
+            <input  class="input-checkbox" name="preferences" value="challenges" type="checkbox">
+            Augmented reality/virtual reality (AR/VR)
+          </label><br>
+          <label for="">
+            <input  class="input-checkbox" name="preferences" value="open-source-community" type="checkbox">
+            Internet of Things (IoT)
+          </label><br>
+          <label for="">
+            <input  class="input-checkbox" name="preferences" value="gitter-help-rooms" type="checkbox">
+            Quantum computing
+          </label><br>
+          <label for="">
+            <input  class="input-checkbox" name="preferences" value="videos" type="checkbox">
+            Natural language processing (NLP)
+          </label>
+      </div>
+      <div class="form-g">
+        <p>Any Comments or suggestions?</p>
+        <textarea name="comment" id="comments" class="text-area" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div class="form-g">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
