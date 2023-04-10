@@ -1,7 +1,6 @@
 :root {
 --color-white: #f3f3f3;
 --color-darkblue-alpha: rgba(27, 27, 50, 0.514);
---color-green: #37af65;
 }
 
 *, *::before, *::after {
